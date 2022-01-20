@@ -3,7 +3,9 @@
     <head>
         <title></title>
 
-    
+        <!-- Links -->
+        <link rel="stylesheet" href="css/style.css">
+        
     </head>
 
     <body>

@@ -3,7 +3,8 @@
     <head>
         <title></title>
 
-    
+        <!-- Links -->
+        <link rel="stylesheet" href="css/home.css">
     </head>
 
     <body>
