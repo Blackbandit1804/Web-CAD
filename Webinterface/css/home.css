@@ -1,0 +1,74 @@
+
+html {
+    background-color: rgb( 27, 27, 27);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a::after {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation Menu*/
+.nav-manager {
+    margin: 40px;
+
+}
+
+.nav-box {
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
+    width: 200px;
+    height: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.90);
+}
+
+.nav-menu {
+    margin-top:300px;
+    line-height: 60px;
+    font-size: xx-large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-btn {
+
+}
+
+.nav-btn:hover {
+    color: grey;
+    text-shadow: 80%, black;
+}
+
+
+/* Main Window*/
+
+.main-manager {
+    margin-left: 450px;
+}
+
+.main-box {
+    text-align: center;
+    background-color: rgb(148, 148, 148);
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 20px;
+    width: 1500px;
+    height: 1000px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.90);
+}
