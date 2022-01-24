@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-<?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-
-try {
-  $conn = new PDO("pgsql:host=$servername;dbname=myDB", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
-?>
 <html>
     <head>
         <title>Test Site</title>
@@ -22,22 +8,23 @@ try {
         
     </head>
 
-    <body>
-
-      <div class="login-box">
-            <div class="login-form">
-              <form action="login.php" method="$_POST" name="MainLogin">
-                  <label for="username">Username:</label>
-                  <input type="text" id="username" name="username" autocomplete="on">
-                  <br>
-                  <label for="pwd">Password: </label>
-                  <input type="password" id="pwd" name="pwd" autocomplete="off">
-                  <br>
-                  <br>
-                  <input type="submit" id="login-btn" name="login-btn">
-              </form>
-            </div>
+    <body style="background-image: url('img/background01.jpg'); background-size:cover;">
+      <div class="login-center">
+        <div class="login-box">
+          <h3 class="login-header">Login</h3>
+          <div class="login-form">
+            <form action="login.php" method="$_POST" name="MainLogin">
+                <input type="text" id="username" name="username" autocomplete="on" placeholder="Username">
+                <br>
+                <input type="password" id="pwd" name="pwd" autocomplete="off" placeholder="Password">
+                <br>
+                <br>
+                <input type="submit" id="login-btn" name="login-btn" value="Login">
+            </form>
           </div>
+        </div>
+      </div>
+
 
     </body>
 
