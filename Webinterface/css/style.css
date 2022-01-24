@@ -1,5 +1,22 @@
 
 html {
     background-image: url('img/background01.jpg');
+    background-color: black;
+
+}
+
+.login-box {
+    margin: 0;
+    top: 30%;
+    right: 40%;
+    position:fixed;
+    background-color: azure;
+    height: 250px;
+    width: 400px;
     
+}
+
+.login-form {
+    color: black;
+    margin: 40px;
 }
