@@ -1,22 +1,69 @@
 
-html {
-    background-image: url('img/background01.jpg');
-    background-color: black;
-
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb( 27, 27, 27);
 }
 
-.login-box {
+.login-center {
     margin: 0;
     top: 30%;
     right: 40%;
     position:fixed;
-    background-color: azure;
-    height: 250px;
-    width: 400px;
-    
+}
+
+.login-box {
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.90);
+}
+
+.login-header {
+    font-size: xx-large;
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-form {
     color: black;
-    margin: 40px;
+    line-height: 30px;
 }
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #838383;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
