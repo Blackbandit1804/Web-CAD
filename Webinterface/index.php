@@ -1,3 +1,24 @@
+<?php
+  session_start();
+  include "connect.php";
+  
+  if(isset($_POST["login-btn"])){
+    if($_POST["username"]=="" or $_POST["pwd"]=="") {
+
+    } else {
+      $username=strip_tags(trim($_POST["username"]));
+      $pwd=strip_tags(trim($_POST["pwd"]));
+      $query=$conn->prepare("SELECT * FROM login AND password=?");
+      $query->execute(array($pwd));
+      $control=$query->fetch(PDO::FETCH_OBJ);
+      if($control>0) {
+        $_SESSION["username"]=$username;
+        header("location:home.php");
+      }
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,7 +34,7 @@
         <div class="login-box">
           <h3 class="login-header">Login</h3>
           <div class="login-form">
-            <form action="login.php" method="$_POST" name="MainLogin">
+            <form method="$_POST" name="MainLogin">
                 <input type="text" id="username" name="username" autocomplete="on" placeholder="Username">
                 <br>
                 <input type="password" id="pwd" name="pwd" autocomplete="off" placeholder="Password">
