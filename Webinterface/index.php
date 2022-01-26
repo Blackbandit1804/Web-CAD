@@ -1,5 +1,6 @@
 <?php
   session_start();
+  ob_start();
   include "connect.php";
   
   if(isset($_POST["login-btn"])){
@@ -13,7 +14,7 @@
       $control=$query->fetch(PDO::FETCH_OBJ);
       if($control>0) {
         $_SESSION["username"]=$username;
-        header("location:home.php");
+        header("Location:home.php");
       }
     }
   }
@@ -23,6 +24,7 @@
 <html>
     <head>
         <title>Test Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Links -->
         <link rel="stylesheet" href="css/style.css">
@@ -34,13 +36,13 @@
         <div class="login-box">
           <h3 class="login-header">Login</h3>
           <div class="login-form">
-            <form method="$_POST" name="MainLogin">
+            <form action="home.php" method="$_POST" name="MainLogin">
                 <input type="text" id="username" name="username" autocomplete="on" placeholder="Username">
                 <br>
                 <input type="password" id="pwd" name="pwd" autocomplete="off" placeholder="Password">
                 <br>
                 <br>
-                <input type="submit" id="login-btn" name="login-btn" value="Login">
+                <button type="submit" id="login-btn" name="login-btn">Login</button>
             </form>
           </div>
         </div>
