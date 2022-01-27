@@ -17,7 +17,7 @@ In the end of this project, everyone should be able to install the CAD and use f
 
 
 ## To Do
-- [] make home.php responsive
+- [ ] make home.php responsive
 - [ ] add a managin page
   - [ ] add register employee
 - [ ] encrypt password
