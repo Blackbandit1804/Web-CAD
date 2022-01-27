@@ -26,13 +26,10 @@ a::after {
     text-align: center;
     background-color: rgb(148, 148, 148);
     position: absolute;
-    padding-top: 10px;
-    padding-bottom: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
+    margin: 20px;
+    height: 90%;
+    min-width: 300px;
     border-radius: 20px;
-    width: 200px;
-    height: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.90);
 }
 
@@ -57,18 +54,22 @@ a::after {
 /* Main Window*/
 
 .main-manager {
-    margin-left: 450px;
+
+
 }
 
 .main-box {
-    text-align: center;
     background-color: rgb(148, 148, 148);
-    padding-top: 10px;
-    padding-bottom: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
+
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+    min-width: 90%;
+    height: 90%;
+
     border-radius: 20px;
-    width: 1500px;
-    height: 1000px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1.90);
 }
