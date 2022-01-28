@@ -22,7 +22,7 @@
             $pwd=strip_tags(trim($_POST["pwd"]));
 			
             $query=$conn->prepare("INSERT INTO `login` (`id`, `username`, `pwd`, `role`) VALUES ('?', '?', '?', '?');");
-            $query->execute(array( $number, $username, $pwd, $userrole));
+            $query->exec(array( $number, $username, $pwd, $userrole));
             $control=$query->fetch(PDO::FETCH_OBJ);
             if($control>0) {
                 echo ("Register Succesfull");
