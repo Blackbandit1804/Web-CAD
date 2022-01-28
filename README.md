@@ -13,3 +13,13 @@ In the end of this project, everyone should be able to install the CAD and use f
 <!-- Links -->
 [1]: Docs/START.md
 [2]: Docs/INSTALL.md
+
+
+
+## To Do
+- [ ] make home.php responsive
+- [ ] add a managin page
+  - [ ] add register employee
+- [ ] encrypt password
+- [ ] decrypt password
+- [ ] ...
