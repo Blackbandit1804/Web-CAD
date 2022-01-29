@@ -7,15 +7,6 @@ To Contribute please read the Docs.
 In the end of this project, everyone should be able to install the CAD and use for their Role Play Server.
 ### [Install Guide][2]
 
-
-
-
-<!-- Links -->
-[1]: Docs/START.md
-[2]: Docs/INSTALL.md
-
-
-
 ## To Do
 - [ ] make home.php responsive
 - [ ] add a managin page
@@ -23,3 +14,15 @@ In the end of this project, everyone should be able to install the CAD and use f
 - [ ] encrypt password
 - [ ] decrypt password
 - [ ] ...
+
+## [Discord][3]
+
+
+
+
+
+
+<!-- Links -->
+[1]: Docs/START.md
+[2]: Docs/INSTALL.md
+[3]: https://discord.gg/cpCCVRJPWr
