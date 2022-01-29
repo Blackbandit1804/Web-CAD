@@ -1,23 +1,6 @@
 <?php
   session_start();
   include "connect.php";
-  
-  if(isset($_POST["login-btn"])){
-    if($_POST["username"]=="" or $_POST["pwd"]=="") {
-
-    } else {
-      $username=strip_tags(trim($_POST["username"]));
-      $pwd=strip_tags(trim($_POST["pwd"]));
-      $query=$conn->prepare("SELECT * FROM login WHERE username=? AND pwd=?");
-      $query->execute(array($username, $pwd));
-      $control=$query->fetch(PDO::FETCH_OBJ);
-      if($control>0) {
-        $_SESSION["username"]=$username;
-        echo ("Login Succesfull");
-        header("Location:home.php");
-      }
-    }
-  }
 ?>
 
 <!DOCTYPE html>
