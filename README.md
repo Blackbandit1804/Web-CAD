@@ -23,6 +23,6 @@ In the end of this project, everyone should be able to install the CAD and use f
 
 
 <!-- Links -->
-[1]: Docs/START.md
-[2]: Docs/INSTALL.md
+[1]: https://github.com/WilderMO/Web-CAD/wiki/
+[2]: https://github.com/WilderMO/Web-CAD/wiki/install
 [3]: https://discord.gg/cpCCVRJPWr
