@@ -15,6 +15,10 @@ In the end of this project, everyone should be able to install the CAD and use f
 - [ ] decrypt password
 - [ ] ...
 
+## Project mission
+The mission of the project is to help new role play servers to get startet by saving money on a Police CAD/MDT.
+
+
 ## [Discord][3]
 
 
